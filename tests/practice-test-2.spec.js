@@ -12,7 +12,6 @@ test('has title', async () => {
     });
     
     const page = await context.newPage();
-
     await page.goto('https://freelance-learn-automation.vercel.app/signup');
 
     await page.locator('#state').selectOption('Goa');
@@ -35,4 +34,16 @@ test('has title', async () => {
 
     await expect(value.includes('Haryana')).toBeTruthy();
 
+
+    let state = await page.$('#state');
+    let allElements = await state.$$('option');
+
+    for (let i = 0; i < allElements.length; i++) {
+        let element = allElements[i]
+        let text = await element.textContent();
+        if( text === 'Haryana') {
+            break;
+        }
+        console.log(text);
+    }
 });
