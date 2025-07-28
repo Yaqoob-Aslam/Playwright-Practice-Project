@@ -1,0 +1,14 @@
+{
+    "name": "Engineer Yaqoob",
+    "username": "admin@email.com",
+    "password": "admin@123",
+    "interest": ["Python", "JavaScript", "Nowa kategoria2", "AWS", "test pk", "Playwright By MS", "Cypress", "Playwright","test cat"],
+    "gender": "Male",
+    "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+    }
+}
+
