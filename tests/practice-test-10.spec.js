@@ -32,7 +32,5 @@ test('Stage website automation', async ({}, testInfo) => {
   
   await page.waitForTimeout(5000);
   
-  
-
   await page.pause();
 });
