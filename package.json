@@ -13,6 +13,7 @@
     "allure-playwright": "^3.3.2"
   },
   "dependencies": {
-    "docx": "^9.5.1"
+    "docx": "^9.5.1",
+    "moment": "^2.30.1"
   }
 }
