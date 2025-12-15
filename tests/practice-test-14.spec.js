@@ -28,5 +28,4 @@ test('Interact with frames', async ({}, testInfo) => {
     const nestedFrame = frame.frameLocator("iframe[src='innerframe']");
     await nestedFrame.locator("//input[@name='email']").fill("testuser@123");
     await page.waitForTimeout(3000);
-
 });
